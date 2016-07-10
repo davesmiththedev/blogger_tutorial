@@ -6,6 +6,7 @@ include ArticlesHelper
     end
 
     def show
+        @comment = Comment.new
         @article = Article.find(params[:id])
     end
 
